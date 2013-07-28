@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Monda:400,600,700);
-body{font-family:'Monda',sans-serif;font-size:1em;line-height:1}
+body{margin:2em 0;font-family:'Monda',sans-serif;font-size:1em;line-height:1}
 .clearfix:after{content:'';display:table;clear:both}
 a{text-decoration:none}
-@media all and (max-width:600px){.nav{margin:0 auto;width:600px}.nav .nav-list{background:#000;list-style:none}.nav .nav-list>li{float:left} .nav .nav-list a{display:block;padding:8px;margin:0 1px 0 0;color:#fff;background:#000}}@media all and (min-width:600px){.nav{margin:20px auto;width:600px}.nav .nav-list{list-style:none}.nav .nav-list>li{float:left} .nav .nav-list a{display:block;padding:8px;margin:0 1px 0 0;color:#fff;background:#18b160}}
+#a_hover{background:#062a17}
+@media all and (max-width:490px){.nav{background:#18b160;width:100%}.nav .nav-list{margin:0;padding:0;list-style:none}.nav .nav-list>li{clear:both;width:100%;text-align:center;border-bottom:1px solid #fff} .nav .nav-list a{display:block;padding:8px;margin:0 1px 0 0;color:#fff;background:#18b160}.nav .nav-list a:hover,.nav .nav-list a:focus{background:#062a17}}@media all and (max-width:530px){.nav{background:#18b160}.nav .nav-list{list-style:none}.nav .nav-list>li{float:left;border-left:1px solid #fff}.nav .nav-list>li:last-child{border-right:1px solid #fff} .nav .nav-list a{display:block;padding:8px;margin:0 1px 0 0;color:#fff;background:#18b160}.nav .nav-list a:hover,.nav .nav-list a:focus{background:#062a17}}@media all and (min-width:530px){.nav{width:600px;margin:0 auto}.nav .nav-list{list-style:none}.nav .nav-list>li{float:left} .nav .nav-list a{display:block;padding:8px;margin:0 1px 0 0;color:#fff;background:#18b160}.nav .nav-list a:hover,.nav .nav-list a:focus{background:#062a17}}

@@ -1,9 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Monda:400,600,700);
+@menuBgColor: #18b160;
 
 body {
-  font-family: 'Monda', sans-serif;
-  font-size: 1em;
-  line-height: 1;
+    margin:2em 0;
+    font-family: 'Monda', sans-serif;
+    font-size: 1em;
+    line-height: 1;
 }
 
 .clearfix {
@@ -18,31 +20,70 @@ a {
     text-decoration: none;
 }
 
-@media all and (max-width: 600px){
+#a_hover {
+    background: darken(@menuBgColor, 30%);
+}
+
+@media all and (max-width: 490px){
     .nav {
-        margin:0 auto;
-        width: 600px;
+        background: @menuBgColor;
+        width:100%;
         .nav-list {
-            background: darken(#18b160, 50%);
+            margin:0;
+            padding:0;
             list-style: none;
             >li {
-                float: left;
+                clear: both;
+                width:100%;
+                text-align:center;
+                border-bottom:1px solid #FFF;
             }
             a {
                 display: block;
                 padding: 8px;
                 margin: 0 1px 0 0;
                 color: #FFFFFF;
-                background: darken(#18b160, 50%);
+                background: @menuBgColor;
+
+                &:hover, &:focus {
+                    #a_hover;
+                }
             }
         }
     }
 }
 
-@media all and (min-width: 600px){
+@media all and (max-width: 530px){
     .nav {
-        margin:20px auto;
+        background: @menuBgColor;
+        .nav-list {
+            list-style: none;
+            >li {
+                float: left;
+                border-left:1px solid #FFF;
+                &:last-child {
+                    border-right:1px solid #FFF;
+                }
+            }
+            a {
+                display: block;
+                padding: 8px;
+                margin: 0 1px 0 0;
+                color: #FFFFFF;
+                background: @menuBgColor;
+
+                &:hover, &:focus {
+                    #a_hover;
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 530px){
+    .nav {
         width: 600px;
+        margin:0 auto;
         .nav-list {
             list-style: none;
             >li {
@@ -53,7 +94,11 @@ a {
                 padding: 8px;
                 margin: 0 1px 0 0;
                 color: #FFFFFF;
-                background: #18b160;
+                background: @menuBgColor;
+
+                &:hover, &:focus {
+                    #a_hover;
+                }
             }
         }
     }
