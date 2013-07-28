@@ -1,0 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Monda:400,600,700);
+body{font-family:'Monda',sans-serif;font-size:1em;line-height:1}
+.clearfix:after{content:'';display:table;clear:both}
+a{text-decoration:none}
+@media all and (max-width:600px){.nav{margin:0 auto;width:600px}.nav .nav-list{background:#000;list-style:none}.nav .nav-list>li{float:left} .nav .nav-list a{display:block;padding:8px;margin:0 1px 0 0;color:#fff;background:#000}}@media all and (min-width:600px){.nav{margin:20px auto;width:600px}.nav .nav-list{list-style:none}.nav .nav-list>li{float:left} .nav .nav-list a{display:block;padding:8px;margin:0 1px 0 0;color:#fff;background:#18b160}}
